@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Document</title>
+	<script type="text/javascript" src="../jquery172/jquery.min.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		$("#btn1").click(function(){
+			// $("#box p").css("border","3px solid red");
+			// $("#box p:eq(0)").css("border","3px solid red");
+			$("#box p:eq(3)").css("border","3px solid red");
+		});
+	});
+	</script>
+	<style type="text/css">
+	#box div,#box p {
+		padding: 5px;
+		border: 1px solid #000;
+	}
+	#box div{
+		margin: 5px;
+
+	}
+	</style>
+</head>
+<body>
+<div id="box">
+	<input type="button" value="选后代" id="btn1">
+	<input type="button" value="选子代" id="btn2">
+	<div class="son"><p>这是一个段落</p></div>
+	<div class="son"><p>这是一个段落</p></div>
+	<div class="son"><p>这是一个段落</p></div>
+	<div class="son"><p>这是一个段落</p></div>
+	<div class="son"><p>这是一个段落</p></div>
+	<p>这是一个段落</p>
+	<p>这是一个段落</p>
+	<p>这是一个段落</p>
+	<p>这是一个段落</p>
+	<p>这是一个段落</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Document</title>
+	<script type="text/javascript" src="../jquery172/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#btn1").click(function(){
+//				$("#box").css("background" , "green");
+//				$("#box").css("border","10px solid green");
+				// $("#box").css("width","400px");
+				// $("#box").css("height","400px");
+				// $("#box").css("width","400px").css("height","400px");
+				// $("#box").css({"width":"400px","height":"400px"});
+				$("#box").addClass("active");
+				$("#box").addClass("bd");
+			});
+			$("#btn2").click(function(){
+				$("#box").removeClass("active");
+			})
+		});
+
+	</script>
+	<style type="text/css">
+		div  {
+			width: 200px;
+			height: 200px;
+			background: red;
+		}
+		.active{
+			background: green;
+		}
+		.bd{
+			border: 10px solid #ff0000
+		}
+	</style>
+</head>
+<body>
+<input type="button" value="ボタン１" id="btn1">
+<input type="button" value="ボタン２" id="btn2">
+<div id="box"></div>
+</body>
+</html>
